@@ -1,0 +1,19 @@
+{
+    "name": "ikucmknk/tdd-money",
+    "type": "project",
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ikucmknk\\TddMoney\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "m.ikeuchi",
+            "email": "ikucmknk@gmail.com"
+        }
+    ],
+    "require": {}
+}

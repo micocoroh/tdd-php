@@ -1,0 +1,1 @@
+{"version":1,"defects":{"MoneyTest::testMultiplication":3,"MoneyTest::testEquality":3,"MoneyTest::testFrancMultiplication":4},"times":{"MoneyTest::testMultiplication":0.004,"MoneyTest::testEquality":0.003,"MoneyTest::testFrancMultiplication":0}}

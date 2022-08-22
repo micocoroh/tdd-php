@@ -6,14 +6,13 @@ namespace Ikucmknk\TddMoney\Entity;
 
 class Franc extends Money
 {
-  protected int $amount;
-  public function __construct(int $amount)
+    public function __construct(int $amount, string $currency)
   {
-    $this->amount = $amount;
+      parent::__construct($amount, $currency);
   }
 
   public function times(int $multiplier): Money
   {
-    return new Franc($this->amount * $multiplier);
+    return Money::franc($this->amount * $multiplier);
   }
 }

@@ -16,15 +16,15 @@ class Money
   }
 
 
-    function times(int $multiplier): ?Money
+    function times(int $multiplier): Money
     {
-        return null;
+        return new Money($this->amount * $multiplier, $this->currency);
     }
 
   public function equals(Money $Money): bool
   {
     return $Money->amount === $this->amount
-      && get_class($this) === get_class($Money);
+      && $this->currency === $Money->currency();
   }
 
   public static function dollar(int $amount): Money

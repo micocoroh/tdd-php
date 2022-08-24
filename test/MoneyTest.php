@@ -1,6 +1,7 @@
 <?php declare(strict_types=1);
 
 use Ikucmknk\TddMoney\Entity\Dollar;
+use Ikucmknk\TddMoney\Entity\Franc;
 use Ikucmknk\TddMoney\Entity\Money;
 use PHPUnit\Framework\TestCase;
 
@@ -27,6 +28,11 @@ class MoneyTest extends TestCase
         $Five = Money::franc(5);
         $this->assertEquals(Money::franc(10), $Five->times(2));
         $this->assertEquals(Money::franc(15), $Five->times(3));
+    }
+
+    public function testDifferentClassEquality()
+    {
+        $this->assertTrue((new Money(10, "CHF"))->equals(new Franc(10, 'CHF')));
     }
 
     public function testCurrency()

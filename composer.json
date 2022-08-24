@@ -1,5 +1,6 @@
 {
     "name": "ikucmknk/tdd-money",
+    "description": "tdd-php desu.",
     "type": "project",
     "require-dev": {
         "phpunit/phpunit": "^9.5"

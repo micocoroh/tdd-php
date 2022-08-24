@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Ikucmknk\TddMoney\Entity;
 
-abstract class Money
+class Money
 {
   protected int $amount;
   protected string $currency;
@@ -16,7 +16,10 @@ abstract class Money
   }
 
 
-    abstract function times(int $multiplier): Money;
+    function times(int $multiplier): ?Money
+    {
+        return null;
+    }
 
   public function equals(Money $Money): bool
   {

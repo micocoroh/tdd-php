@@ -1,5 +1,6 @@
 <?php declare(strict_types=1);
 
+use Ikucmknk\TddMoney\Entity\Dollar;
 use Ikucmknk\TddMoney\Entity\Money;
 use PHPUnit\Framework\TestCase;
 

@@ -1,10 +1,8 @@
 <?php declare(strict_types=1);
 
-
 use Ikucmknk\TddMoney\Entity\Franc;
 use Ikucmknk\TddMoney\Entity\Money;
 use PHPUnit\Framework\TestCase;
-
 
 class MoneyTest extends TestCase
 {
